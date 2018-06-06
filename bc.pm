@@ -351,7 +351,7 @@ sub get_barcodes{
     $this->pick_from_set($set,$pick_tot,\@ret_set);
     if($pick_tot > @ret_set){
 	my $def=$pick_tot - @ret_set;
-	$mess.="<p><b> $set is missing $def barcodes, due to constraints</b></p>";
+	$mess.="<p><b> $set is missing $def barcodes, due to clash with input</b></p>";
 	$def_t+=$def;
     }  
   } 

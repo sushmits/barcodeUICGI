@@ -23,7 +23,7 @@ json_string = form.getvalue('json_input')
 
 #print ("""<p>"""+json_string+"""</p>""")
 
-#json_string="""{"amar":"0","bioo":"0","bioo6":"0","biooSm":"19","htcra":"0","htcrb":"0","mtcra":"0","mtcrb":"0","neb":"0","next":"0","tru":"0","barcodes":" - "} """
+#json_string="""{"amar":"96","bioo":"96","bioo6":"48","biooSm":"48","htcra":"0","htcrb":"0","mtcra":"0","mtcrb":"0","neb":"0","next":"0","tru":"0","barcodes":" - "} """
 #json_string="""{"neb":"12","barcodes":"CTTGTA,TTAGGC,CTAGTA"}"""
 removecurl_json_string=json_string[1:len(json_string)-1]
 
@@ -134,7 +134,15 @@ if "ERR" in json_output:
         print("""<div style="float:left;display: inline-block;width:50%;"> 
 		<br>
 		<br>
-		<p style="font-size:20px;font-family:Verdana;color:Red;" >An error occured, please try again.</p>""")
+		<p style="font-size:20px;font-family:Verdana;color:Red;" >You have given invalid inputs </p><br><br>""")
+        print(""" <h2 style="font-family: Verdana; font-size: 20px;color: Navy;float:center;">Your Inputs </h2>""")
+        print("""<table class="table table-bordered" ><th>Barcode</th><th>Number</th><tbody>""")
+        for i in range(len(json_string_split_lines)):
+
+                each_line_json=json_string_split_lines[i].split(":")
+                if each_line_json[1]!='"0' and each_line_json[1]!='""':
+                        print("""<tr><td>"""+each_line_json[0][:len(each_line_json[0])-1].replace('"','')+"""</td><td>"""+each_line_json[1][1:len(each_line_json[1])].replace('"','')+"""</td></tr>""")
+        print("""</tbody></table>""")
 	#print("""<p style="font-size:20px;font-family:Verdana;color:Red;" >"""+str(json_out_obj['ERR'])+"""</p></div>""")
 	json_out_obj_split = str(json_out_obj['ERR']).split(',')
 	print("""<table class="table table-bordered">
@@ -147,15 +155,16 @@ if "ERR" in json_output:
 
 else:
 	print("""<div class="image" style="float:right;display: inline-block;width:50%;">""")
-	print(""" <h2 style="font-family: Verdana; font-size: 30px;color: Navy;float:center;">You have given the following inputs</h2>""")
+	print(""" <h2 style="font-family: Verdana; font-size: 20px;color: Navy;float:center;">Your Inputs </h2>""")
 	print("""<table class="table table-bordered" ><th>Barcode</th><th>Number</th><tbody>""")
 	for i in range(len(json_string_split_lines)):
 		
 		each_line_json=json_string_split_lines[i].split(":")
 		if each_line_json[1]!='"0' and each_line_json[1]!='""':
-			print("""<tr><td>"""+each_line_json[0][:len(each_line_json[0])-1].replace('"','')+"""</td><td>"""+each_line_json[1][1:len(each_line_json[1])].replace('"','')+"""</td></tr>""")
-	print("""</tbody></table>""")
-
+			print("""<tr><td>"""+each_line_json[0][:len(each_line_json[0])-1].replace('"','')+"""</td><td>"""+each_line_json[1][1:len(each_line_json[1])].replace('"','').replace('}','')+"""</td></tr>""")
+	print("""</tbody></table><br>""")
+	if 'message' in json_out_obj.keys():
+		print("""<p style="font-family: Verdana; font-size: 20px;color: Red;">Warning : """+json_out_obj['message'].replace('_',' ')+"""</p>""")
 	print("""
             <br>
 	    <h2 style="font-family:Verdana;font-size:30px;color:Navy;"> Validated barcode set	</h2>"""+
@@ -169,7 +178,7 @@ else:
             <br>""")
 	print("""
             <h2 style="font-family: Verdana; font-size:30px;color: Navy;">Diversity</h2>
-            <img id="img_graph" style="margin:20px;float:left;" src="""+json_out_obj['fig_lnk']+""">
+            <img id="img_graph" style="margin:20px;float:left;" src="""+json_out_obj['fig']+""">
             <br>
         </div>""")
 

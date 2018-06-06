@@ -106,13 +106,17 @@ my $fig_lnk=mk_fig_n_lnk($perf_str,$pfile);
 my $matf="tmp/mat$$.html";
 mk_tbl($mat_str,$matf);
 
+
 if($err_str_new=~/\S/){
+
     $err_str_new=~s/^\s+//;    $err_str_new=~s/\s+$//; $err_str_new=~s/\s+/_/g;
-    print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\",\"message\":$err_str_new\"}\n";
+
+    print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\",\"message\":\"$err_str_new\"}\n";
+
+} else { 
+    print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\"}\n";
 }
-else { 
-print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\"}\n";
-}
+
 exit;
 
 
