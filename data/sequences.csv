@@ -1,0 +1,399 @@
+barcode_preset_seq_id,barcode_preset_id,barcode_sequence,barcode_preset_name
+INDEX01,amar,ATGATTGA,Amaryllis
+INDEX02,amar,GACTGCCT,Amaryllis
+INDEX03,amar,GCTATTCT,Amaryllis
+INDEX04,amar,AGCGTTAC,Amaryllis
+INDEX05,amar,GTGCTACA,Amaryllis
+INDEX06,amar,CGTGGTGC,Amaryllis
+INDEX07,amar,AACGAGTC,Amaryllis
+INDEX08,amar,ATAGTATG,Amaryllis
+INDEX09,amar,TCGGTTGG,Amaryllis
+INDEX10,amar,ATGTTGCG,Amaryllis
+INDEX11,amar,CGTGTGTT,Amaryllis
+INDEX12,amar,GTATCTCG,Amaryllis
+INDEX13,amar,CTTGAACT,Amaryllis
+INDEX14,amar,AATCACCT,Amaryllis
+INDEX15,amar,CGGCGATG,Amaryllis
+INDEX16,amar,GATGTGCC,Amaryllis
+INDEX17,amar,TGCTCATG,Amaryllis
+INDEX18,amar,TTAGCCAG,Amaryllis
+INDEX19,amar,CCTGGAAG,Amaryllis
+INDEX20,amar,CCATCAGG,Amaryllis
+INDEX21,amar,CGGCAGAT,Amaryllis
+INDEX22,amar,TCGATATC,Amaryllis
+INDEX23,amar,TCATGCTG,Amaryllis
+INDEX24,amar,CGATGCCA,Amaryllis
+INDEX25,amar,GCCTGAAC,Amaryllis
+INDEX26,amar,ACATCTTA,Amaryllis
+INDEX27,amar,GTGGCTGA,Amaryllis
+INDEX28,amar,TTGCTTAT,Amaryllis
+INDEX29,amar,AACAGGCG,Amaryllis
+INDEX30,amar,CGCAACCG,Amaryllis
+INDEX31,amar,ACGCCGAG,Amaryllis
+INDEX32,amar,CGGTTACC,Amaryllis
+INDEX33,amar,GGTCAATT,Amaryllis
+INDEX34,amar,GCGTACAT,Amaryllis
+INDEX35,amar,CTACATGC,Amaryllis
+INDEX36,amar,TTGAGGAG,Amaryllis
+INDEX37,amar,GAATCAAT,Amaryllis
+INDEX38,amar,TCCTCGGT,Amaryllis
+INDEX39,amar,GCGCATTC,Amaryllis
+INDEX40,amar,ATAAGAAC,Amaryllis
+INDEX41,amar,TACCATTG,Amaryllis
+INDEX42,amar,TCGAATCG,Amaryllis
+INDEX43,amar,TCCGCTCA,Amaryllis
+INDEX44,amar,GTTGGATA,Amaryllis
+INDEX45,amar,CCGGTGCT,Amaryllis
+INDEX46,amar,GTTGTCGG,Amaryllis
+INDEX47,amar,ACTTAACC,Amaryllis
+INDEX48,amar,TGTCCGGA,Amaryllis
+INDEX49,amar,TTCTGACG,Amaryllis
+INDEX50,amar,AGACACGG,Amaryllis
+INDEX51,amar,TGACTAGT,Amaryllis
+INDEX52,amar,CACGGCTG,Amaryllis
+INDEX53,amar,GAGAAGGT,Amaryllis
+INDEX54,amar,TTACACTA,Amaryllis
+INDEX55,amar,TCTAACTT,Amaryllis
+INDEX56,amar,AGTGCATC,Amaryllis
+INDEX57,amar,GCAAGGCA,Amaryllis
+INDEX58,amar,CATAGATT,Amaryllis
+INDEX59,amar,ACCAGCGC,Amaryllis
+INDEX60,amar,GATCCTTG,Amaryllis
+INDEX61,amar,CTACGGCG,Amaryllis
+INDEX62,amar,TGTTATCA,Amaryllis
+INDEX63,amar,GACGGTAG,Amaryllis
+INDEX64,amar,CCACCTCT,Amaryllis
+INDEX65,amar,AGTATACT,Amaryllis
+INDEX66,amar,TCAACGTG,Amaryllis
+INDEX67,amar,ACTCAGGT,Amaryllis
+INDEX68,amar,CAGAACGC,Amaryllis
+INDEX69,amar,GTCAGGTT,Amaryllis
+INDEX70,amar,AGGTATTC,Amaryllis
+INDEX71,amar,AATTGCGG,Amaryllis
+INDEX72,amar,GTAGAGAT,Amaryllis
+INDEX73,amar,GGTCGTAT,Amaryllis
+INDEX74,amar,TTAGGTCT,Amaryllis
+INDEX75,amar,GATGACAA,Amaryllis
+INDEX76,amar,TAACGGTC,Amaryllis
+INDEX77,amar,GTCAACAA,Amaryllis
+INDEX78,amar,CAAGATAT,Amaryllis
+INDEX79,amar,CTATTCTT,Amaryllis
+INDEX80,amar,GGCTAGGC,Amaryllis
+INDEX81,amar,CATCTTCA,Amaryllis
+INDEX82,amar,GTGACATG,Amaryllis
+INDEX83,amar,TGCCGTCC,Amaryllis
+INDEX84,amar,CACACGTA,Amaryllis
+INDEX85,amar,TAGACACC,Amaryllis
+INDEX86,amar,ATTCATAG,Amaryllis
+INDEX87,amar,TCACCTAC,Amaryllis
+INDEX88,amar,TAGTAAGG,Amaryllis
+INDEX89,amar,GGTTCGCT,Amaryllis
+INDEX90,amar,ACTATCAC,Amaryllis
+INDEX91,amar,CGCTCCAC,Amaryllis
+INDEX92,amar,GCCGAATG,Amaryllis
+INDEX93,amar,CGCGATTA,Amaryllis
+INDEX94,amar,AAGAGCAT,Amaryllis
+INDEX95,amar,TCTGCCGC,Amaryllis
+INDEX96,amar,TCTCTCCG,Amaryllis
+Index_1,bioo,GTGTTCTA,Bioo
+Index_10,bioo,CTGAGCCA,Bioo
+Index_11,bioo,ACACAGAA,Bioo
+Index_12,bioo,TATCAGCA,Bioo
+Index_13,bioo,CTGTAGCC,Bioo
+Index_14,bioo,TGGCTTCA,Bioo
+Index_15,bioo,CCAGTTCA,Bioo
+Index_16,bioo,AGATGTAC,Bioo
+Index_17,bioo,ACAGCAGA,Bioo
+Index_18,bioo,ACAAGCTA,Bioo
+Index_19,bioo,ACGCTCGA,Bioo
+Index_2,bioo,AAACATCG,Bioo
+Index_20,bioo,CACTTCGA,Bioo
+Index_21,bioo,AAGACGGA,Bioo
+Index_22,bioo,AACGCTTA,Bioo
+Index_23,bioo,GAATCTGA,Bioo
+Index_24,bioo,ATCCTGTA,Bioo
+Index_25,bioo,AGTACAAG,Bioo
+Index_26,bioo,ACCACTGT,Bioo
+Index_27,bioo,AACTCACC,Bioo
+Index_28,bioo,CGCATACA,Bioo
+Index_29,bioo,AGGCTAAC,Bioo
+Index_3,bioo,CATCAAGT,Bioo
+Index_30,bioo,GCCAAGAC,Bioo
+Index_31,bioo,ATGCCTAA,Bioo
+Index_32,bioo,GGTGCGAA,Bioo
+Index_33,bioo,CAATGGAA,Bioo
+Index_34,bioo,ATCATTCC,Bioo
+Index_35,bioo,CAAGACTA,Bioo
+Index_36,bioo,AACCGAGA,Bioo
+Index_37,bioo,AAGAGATC,Bioo
+Index_38,bioo,CAAGGAGC,Bioo
+Index_39,bioo,CCGTGAGA,Bioo
+Index_4,bioo,GTCTGTCA,Bioo
+Index_40,bioo,CCGAAGTA,Bioo
+Index_41,bioo,ACAGATTC,Bioo
+Index_42,bioo,GACTAGTA,Bioo
+Index_43,bioo,CGACTGGA,Bioo
+Index_44,bioo,CGGATTGC,Bioo
+Index_45,bioo,ACATTGGC,Bioo
+Index_46,bioo,AATGTTGC,Bioo
+Index_47,bioo,CAACCACA,Bioo
+Index_48,bioo,CCGACAAC,Bioo
+Index_49,bioo,AACGTGAT,Bioo
+Index_5,bioo,AACAACCA,Bioo
+Index_50,bioo,GGAGAACA,Bioo
+Index_51,bioo,AAGGACAC,Bioo
+Index_52,bioo,GTACGCAA,Bioo
+Index_53,bioo,AGAGTCAA,Bioo
+Index_54,bioo,TTCACGCA,Bioo
+Index_55,bioo,CACCTTAC,Bioo
+Index_56,bioo,GAGCTGAA,Bioo
+Index_57,bioo,GCCACATA,Bioo
+Index_58,bioo,AGCACCTC,Bioo
+Index_59,bioo,GCTAACGA,Bioo
+Index_6,bioo,CATACCAA,Bioo
+Index_60,bioo,AGTCACTA,Bioo
+Index_61,bioo,GATGAATC,Bioo
+Index_62,bioo,TGAAGAGA,Bioo
+Index_63,bioo,CGCTGATC,Bioo
+Index_64,bioo,GAGTTAGC,Bioo
+Index_65,bioo,ATTGGCTC,Bioo
+Index_66,bioo,CGAACTTA,Bioo
+Index_67,bioo,AATCCGTC,Bioo
+Index_68,bioo,ATAGCGAC,Bioo
+Index_69,bioo,TAGGATGA,Bioo
+Index_7,bioo,TGGAACAA,Bioo
+Index_70,bioo,CAGCGTTA,Bioo
+Index_71,bioo,GCTCGGTA,Bioo
+Index_72,bioo,CGACACAC,Bioo
+Index_73,bioo,CAGATCTG,Bioo
+Index_74,bioo,GATAGACA,Bioo
+Index_75,bioo,AAGGTACA,Bioo
+Index_76,bioo,CCTAATCC,Bioo
+Index_77,bioo,AGATCGCA,Bioo
+Index_78,bioo,ACGTATCA,Bioo
+Index_79,bioo,AGCAGGAA,Bioo
+Index_8,bioo,ACCTCCAA,Bioo
+Index_80,bioo,ACTATGCA,Bioo
+Index_81,bioo,GCGAGTAA,Bioo
+Index_82,bioo,AGTGGTCA,Bioo
+Index_83,bioo,CCATCCTC,Bioo
+Index_84,bioo,CTGGCATA,Bioo
+Index_85,bioo,AGCCATGC,Bioo
+Index_86,bioo,CCTCTATC,Bioo
+Index_87,bioo,TCCGTCTA,Bioo
+Index_88,bioo,GTCGTAGA,Bioo
+Index_89,bioo,GAACAGGC,Bioo
+Index_9,bioo,ACACGACC,Bioo
+Index_90,bioo,CTCAATGA,Bioo
+Index_91,bioo,CCTCCTGA,Bioo
+Index_92,bioo,ATTGAGGA,Bioo
+Index_93,bioo,GACAGTGC,Bioo
+Index_94,bioo,CTAAGGTC,Bioo
+Index_95,bioo,TGGTGGTA,Bioo
+Index_96,bioo,TCTTCACA,Bioo
+H_TCRA_BC1,htcra,TGACCA,Human TCR A
+H_TCRA_BC12,htcra,TAACGGTC,Human TCR A
+H_TCRA_BC13,htcra,CAAGATAT,Human TCR A
+H_TCRA_BC14,htcra,CTATTCTT,Human TCR A
+H_TCRA_BC15,htcra,TAGACACC,Human TCR A
+H_TCRA_BC2,htcra,AGGTATTC,Human TCR A
+H_TCRA_BC3,htcra,GTAGAGAT,Human TCR A
+H_TCRA_BC4,htcra,AGTCAA,Human TCR A
+H_TCRA_BC5,htcra,CCGTCC,Human TCR A
+H_TCRA_BC6,htcra,GTTTCG,Human TCR A
+H_TCRA_BC7,htcra,TATAAT,Human TCR A
+H_TCRA_BC8.1,htcra,TCACCTAC,Human TCR A
+H_TCRA_BC8.2,htcra,TAGTAAGG,Human TCR A
+H_TCRA_BC8.3,htcra,GCCGAATG,Human TCR A
+H_TCRA_BC8.4,htcra,CGCGATTA,Human TCR A
+H_TCRB_BC1,htcrb,ACAGTG,Human TCR B
+H_TCRB_BC10,htcrb,GCCAAT,Human TCR B
+H_TCRB_BC11,htcrb,TAGCTT,Human TCR B
+H_TCRB_BC12,htcrb,GACGGTAG,Human TCR B
+H_TCRB_BC13,htcrb,CCACCTCT,Human TCR B
+H_TCRB_BC14,htcrb,AGTATACT,Human TCR B
+H_TCRB_BC15,htcrb,TCAACGTG,Human TCR B
+H_TCRB_BC2,htcrb,CTTGTA,Human TCR B
+H_TCRB_BC3,htcrb,GATCAG,Human TCR B
+H_TCRB_BC4,htcrb,CGTACG,Human TCR B
+H_TCRB_BC5,htcrb,GAGTGG,Human TCR B
+H_TCRB_BC6,htcrb,ACTGAT,Human TCR B
+H_TCRB_BC7,htcrb,TTAGGC,Human TCR B
+H_TCRB_BC8,htcrb,ATCACG,Human TCR B
+H_TCRB_BC9,htcrb,CGATGT,Human TCR B
+m_TCRA_BC1,mtcra,ATCACG,Mouse TCR A
+m_TCRA_BC10,mtcra,ACAGTG,Mouse TCR A
+m_TCRA_BC11,mtcra,GATCAG,Mouse TCR A
+m_TCRA_BC12,mtcra,CTTGTA,Mouse TCR A
+m_TCRA_BC13,mtcra,CGTACG,Mouse TCR A
+m_TCRA_BC14,mtcra,GAGTGG,Mouse TCR A
+m_TCRA_BC15,mtcra,ACTGAT,Mouse TCR A
+m_TCRA_BC16,mtcra,TTAGGC,Mouse TCR A
+m_TCRA_BC2,mtcra,CGATGT,Mouse TCR A
+m_TCRA_BC3,mtcra,GCCAAT,Mouse TCR A
+m_TCRA_BC4,mtcra,TAGCTT,Mouse TCR A
+m_TCRA_BC5,mtcra,AGTCAA,Mouse TCR A
+m_TCRA_BC6,mtcra,CCGTCC,Mouse TCR A
+m_TCRA_BC7,mtcra,GTTTCG,Mouse TCR A
+m_TCRA_BC8,mtcra,TATAAT,Mouse TCR A
+m_TCRA_BC9,mtcra,TGACCA,Mouse TCR A
+m_TCRB_BC1,mtcrb,TGACCA,Mouse TCR B
+m_TCRB_BC10,mtcrb,CGATGT,Mouse TCR B
+m_TCRB_BC11,mtcrb,GCCAAT,Mouse TCR B
+m_TCRB_BC12,mtcrb,TAGCTT,Mouse TCR B
+m_TCRB_BC13,mtcrb,AGTCAA,Mouse TCR B
+m_TCRB_BC14,mtcrb,CCGTCC,Mouse TCR B
+m_TCRB_BC15,mtcrb,GTTTCG,Mouse TCR B
+m_TCRB_BC16,mtcrb,TATAAT,Mouse TCR B
+m_TCRB_BC2,mtcrb,ACAGTG,Mouse TCR B
+m_TCRB_BC3,mtcrb,GATCAG,Mouse TCR B
+m_TCRB_BC4,mtcrb,CTTGTA,Mouse TCR B
+m_TCRB_BC5,mtcrb,CGTACG,Mouse TCR B
+m_TCRB_BC6,mtcrb,GAGTGG,Mouse TCR B
+m_TCRB_BC7,mtcrb,ACTGAT,Mouse TCR B
+m_TCRB_BC8,mtcrb,TTAGGC,Mouse TCR B
+m_TCRB_BC9,mtcrb,ATCACG,Mouse TCR B
+A701,next,TAAGGCGA,Nextera
+A702,next,CGTACTAG,Nextera
+A703,next,AGGCAGAA,Nextera
+A704,next,TCCTGAGC,Nextera
+A705,next,GGACTCCT,Nextera
+A706,next,TAGGCATG,Nextera
+A707,next,CTCTCTAC,Nextera
+A708,next,CAGAGAGG,Nextera
+A709,next,GCTACGCT,Nextera
+A710,next,CGAGGCTG,Nextera
+A711,next,AAGAGGCA,Nextera
+A712,next,GTAGAGGA,Nextera   
+AR001,tru,ATCACG,TruSeq
+AR002,tru,CGATGT,TruSeq
+AR003,tru,TTAGGC,TruSeq
+AR004,tru,TGACCA,TruSeq
+AR005,tru,ACAGTG,TruSeq
+AR006,tru,GCCAAT,TruSeq
+AR007,tru,CAGATC,TruSeq
+AR008,tru,ACTTGA,TruSeq
+AR009,tru,GATCAG,TruSeq
+AR010,tru,TAGCTT,TruSeq
+AR011,tru,GGCTAC,TruSeq
+AR012,tru,CTTGTA,TruSeq
+AR013,tru,AGTCAA,TruSeq
+AR014,tru,AGTTCC,TruSeq
+AR015,tru,ATGTCA,TruSeq
+AR016,tru,CCGTCC,TruSeq
+AR018,tru,GTCCGC,TruSeq
+AR019,tru,GTGAAA,TruSeq
+AR020,tru,GTGGCC,TruSeq
+AR021,tru,GTTTCG,TruSeq
+AR022,tru,CGTACG,TruSeq
+AR023,tru,GAGTGG,TruSeq
+AR025,tru,ACTGAT,TruSeq
+AR027,tru,ATTCCT,TruSeq
+neb1,neb,ATCACG,NEBNext
+neb2,neb,CGATGT,NEBNext
+neb3,neb,TTAGGC,NEBNext
+neb4,neb,TGACCA,NEBNext
+neb5,neb,ACAGTG,NEBNext
+neb6,neb,GCCAAT,NEBNext
+neb7,neb,CAGATC,NEBNext
+neb8,neb,ACTTGA,NEBNext
+neb9,neb,GATCAG,NEBNext
+neb10,neb,TAGCTT,NEBNext
+neb11,neb,GGCTAC,NEBNext
+neb12,neb,CTTGTA,NEBNext
+1,bioo6,CGATGT,BiooScientific6
+2,bioo6,TGACCA,BiooScientific6
+3,bioo6,ACAGTG,BiooScientific6
+4,bioo6,GCCAAT,BiooScientific6
+5,bioo6,CAGATC,BiooScientific6
+6,bioo6,CTTGTA,BiooScientific6
+7,bioo6,ATCACG,BiooScientific6
+8,bioo6,TTAGGC,BiooScientific6
+9,bioo6,ACTTGA,BiooScientific6
+10,bioo6,GATCAG,BiooScientific6
+11,bioo6,TAGCTT,BiooScientific6
+12,bioo6,GGCTAC,BiooScientific6
+13,bioo6,AGTCAA,BiooScientific6
+14,bioo6,AGTTCC,BiooScientific6
+15,bioo6,ATGTCA,BiooScientific6
+16,bioo6,CCGTCC,BiooScientific6
+17,bioo6,GTAGAG,BiooScientific6
+18,bioo6,GTCCGC,BiooScientific6
+19,bioo6,GTGAAA,BiooScientific6
+20,bioo6,GTGGCC,BiooScientific6
+21,bioo6,GTTTCG,BiooScientific6
+22,bioo6,CGTACG,BiooScientific6
+23,bioo6,GAGTGG,BiooScientific6
+24,bioo6,GGTAGC,BiooScientific6
+25,bioo6,ACTGAT,BiooScientific6
+26,bioo6,ATGAGC,BiooScientific6
+27,bioo6,ATTCCT,BiooScientific6
+28,bioo6,CAAAAG,BiooScientific6
+29,bioo6,CAACTA,BiooScientific6
+30,bioo6,CACCGG,BiooScientific6
+31,bioo6,CACGAT,BiooScientific6
+32,bioo6,CACTCA,BiooScientific6
+33,bioo6,CAGGCG,BiooScientific6
+34,bioo6,CATGGC,BiooScientific6
+35,bioo6,CATTTT,BiooScientific6
+36,bioo6,CCAACA,BiooScientific6
+37,bioo6,CGGAAT,BiooScientific6
+38,bioo6,CTAGCT,BiooScientific6
+39,bioo6,CTATAC,BiooScientific6
+40,bioo6,CTCAGA,BiooScientific6
+41,bioo6,GCGCTA,BiooScientific6
+42,bioo6,TAATCG,BiooScientific6
+43,bioo6,TACAGC,BiooScientific6
+44,bioo6,TATAAT,BiooScientific6
+45,bioo6,TCATTC,BiooScientific6
+46,bioo6,TCCCGA,BiooScientific6
+47,bioo6,TCGAAG,BiooScientific6
+48,bioo6,TCGGCA,BiooScientific6
+1,biooSm,ATCACG,BiooSmRNA
+2,biooSm,CGATGT,BiooSmRNA
+3,biooSm,TTAGGC,BiooSmRNA
+4,biooSm,TGACCA,BiooSmRNA
+5,biooSm,ACAGTG,BiooSmRNA
+6,biooSm,GCCAAT,BiooSmRNA
+7,biooSm,CAGATC,BiooSmRNA
+8,biooSm,ACTTGA,BiooSmRNA
+9,biooSm,GATCAG,BiooSmRNA
+10,biooSm,TAGCTT,BiooSmRNA
+11,biooSm,GGCTAC,BiooSmRNA
+12,biooSm,CTTGTA,BiooSmRNA
+13,biooSm,AGTCAA,BiooSmRNA
+14,biooSm,AGTTCC,BiooSmRNA
+15,biooSm,ATGTCA,BiooSmRNA
+16,biooSm,CCGTCC,BiooSmRNA
+17,biooSm,GTAGAG,BiooSmRNA
+18,biooSm,GTCCGC,BiooSmRNA
+19,biooSm,GTGAAA,BiooSmRNA
+20,biooSm,GTGGCC,BiooSmRNA
+21,biooSm,GTTTCG,BiooSmRNA
+22,biooSm,CGTACG,BiooSmRNA
+23,biooSm,GAGTGG,BiooSmRNA
+24,biooSm,GGTAGC,BiooSmRNA
+25,biooSm,ACTGAT,BiooSmRNA
+26,biooSm,ATGAGC,BiooSmRNA
+27,biooSm,ATTCCT,BiooSmRNA
+28,biooSm,CAAAAG,BiooSmRNA
+29,biooSm,CAACTA,BiooSmRNA
+30,biooSm,CACCGG,BiooSmRNA
+31,biooSm,CACGAT,BiooSmRNA
+32,biooSm,CACTCA,BiooSmRNA
+33,biooSm,CAGGCG,BiooSmRNA
+34,biooSm,CATGGC,BiooSmRNA
+35,biooSm,CATTTT,BiooSmRNA
+36,biooSm,CCAACA,BiooSmRNA
+37,biooSm,CGGAAT,BiooSmRNA
+38,biooSm,CTAGCT,BiooSmRNA
+39,biooSm,CTATAC,BiooSmRNA
+40,biooSm,CTCAGA,BiooSmRNA
+41,biooSm,GACGAC,BiooSmRNA
+42,biooSm,TAATCG,BiooSmRNA
+43,biooSm,TACAGC,BiooSmRNA
+44,biooSm,TATAAT,BiooSmRNA
+45,biooSm,TCATTC,BiooSmRNA
+46,biooSm,TCCCGA,BiooSmRNA
+47,biooSm,TCGAAG,BiooSmRNA
+48,biooSm,TCGGCA,BiooSmRNA

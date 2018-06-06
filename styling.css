@@ -1,0 +1,164 @@
+body {margin:0;}
+
+.icon-bar {
+    width: 30%;
+    background-color: #555;
+    float:right;
+    height: 25px;
+}
+
+.icon-bar a {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 15px;
+}
+
+.icon-bar a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+.heading {
+    width: 100%;
+    background-color: coral;
+    padding-left:25px;
+    height: 30px;
+
+}
+
+.heading h1 {
+    text-align: centre;
+    color: white;
+    font-size: 25px;
+}
+
+.para {
+    width: 100%;
+    /*background-color: white ;*/
+    height: 30px;
+}
+
+.para  p{
+    float: left;
+    text-align: left;
+    /*padding: 12px 0;*/
+    color: black;
+    font-size: 15px;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+
+.pick_barcode {
+    width: 50%;
+    background-color: LightSeaGreen ;
+    padding-left:25px;  
+}
+
+.pick_barcode h3 {
+    color: white;
+    font-size: 15px;
+    font-style: Verdana ;
+}
+
+/* Slider styling*/
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: LightSeaGreen;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: LightSeaGreen;
+    cursor: pointer;
+}
+
+.submit_button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit_button {
+    background-color: LightSeaGreen ; 
+    color: white; 
+    border: 2px solid black;
+}
+
+.submit_button:hover {
+    background-color: coral ;
+    color: white;
+    border: 2px solid black;
+}
+
+/* Image tag */
+
+img {
+  width: 600px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: right;
+  
+}
+
+.image
+{
+    padding-right: 25px;
+    padding-bottom: 25px;
+    float:right;
+}
+
+th {
+    font-size: 18px;
+}
+
+#selectionTable tbody tr td:first-child a {
+    font-size: 18px;
+}
+
+#selectionTable tbody tr td:nth-child(2) {
+   font-size: 18px; 
+}
+
+table {
+    width:50%;
+}
+
+.slidercontain{
+    width:60%;
+}
+

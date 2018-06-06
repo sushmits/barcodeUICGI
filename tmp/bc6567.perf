@@ -1,0 +1,18 @@
+ 
+# stacked 100% graph example from Derek Bruening's PhD thess
+=stacked;A;T;C;G
+column=last
+max=100
+#=arithmean
+#=sortbmarks
+=nogridy
+=noupperright
+legendx=right
+legendy=center
+=nolegoutline
+legendfill=
+yformat=%g%%
+xlabel=Position
+ylabel=Percentage of total
+=multi
+=multi

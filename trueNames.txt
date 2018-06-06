@@ -1,0 +1,11 @@
+tru	Truseq
+next	Nextera
+bioo6	BiooScientific 6mer
+bioo	BiooScientific 8mer
+biooSm	BiooScientific Small RNA
+neb	NEB
+amar	Amaryllis
+mtcra	TCRA mouse
+mtcrb	TCRB mouse
+htcra	TCRA human
+htcrb	TCRB human

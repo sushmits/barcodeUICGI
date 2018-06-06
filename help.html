@@ -1,0 +1,48 @@
+<html>
+  <body>
+Barcode Caddy is has three tiers of functions:
+<list>
+<li><b>Check for barcode collisions</b>
+<li><b>Determination of barcodes for sample spike-in</b>
+<li> <b>Barcode Diversity</b>
+</list>
+
+<H5>Looking to check for barcode collisions?</H5>
+Simply input your barcode sequences into <i>Pre-selected barcodes</i> 
+(one Barcode per line), then click <i>Submit</i>. 
+
+<p>
+If all looks well, the message will read <i>This barcode set has our stamp of approval </i>. A bar graph will be displayed with the barcode diversity. Feel free to click on <i>distance matrix</i> to display a chart which indicates the number of base distances between barcodes.
+
+<p>
+If there are any issues, the message will read <i>Input pairs are invalid</i>. A chart will indicate the pair of barcodes that are in question, as well as indicate the number of base distances between barcodes. Please note that the tool is designed to create base distances that are greater than two bases.
+ 
+<H5>Looking to spike into a run and need to determine which barcode to use?</H5>
+
+<enumerate>
+<li>Simply input the barcode sequences that are in use into the box labeled 
+<i>Pre-selected barcodes</i> (one Barcode per line).
+<li>Give the number of barcodes you would need from the desired set of barcodes listed.
+Click Submit.
+<li>A chart will be displayed with the sequence of the barcode to use, as well as the respective barcode number that is supplied in the kit. A bar graph will depict the base diversity of the barcode set.
+</enumerate>
+This tool is an all in one. It determines barcode collisions, selects your barcodes, and while doing so, it will ensure your barcodes are diverse every single time!
+
+<p>
+    The problem of selecting appropriate barcode sets for pooling samples is oft ignored. This could have an impact on experiments and conclusions reached, because it determines the deconvolution of sequencing results. There are two problems that can arise from bad choice of barcodes,
+<p>
+
+<list>
+    <li> An unfortunate choice of barcodes can lead to reads being assigned to the wrong
+      sample, leading to <i style="color:red;">contamination</i>. This happens when the barcodes are not
+      sufficiently different from each other, so that sequencing errors in barcodes makes the assignation of read to sample ambiguous. 
+    </li>
+    <li>
+      Another issue is the diversity of nucleotides at each position in the pool of barcodes. 
+      In sequencing systems based on imaging, the lack of diversity at a position (e.g. mostly A's in position 1), can present a unique challenge to image segmentation routines which determine the location of clusters, resulting in a loss of cluster identification. This can lead to the read being <i style="color:red;">orphaned</i>. So paradoxically, even though the read sequencing can be of high quality,  poor barcode read quality makes the read unusable.
+    </li>
+</list>
+<p>
+	<a href=./barcode.pl> Barcode Caddy</a> considers both issues and makes a reasonable choice of barcodes, from sets picked by the user, to maximize yield and minimize errors.
+  </body>		
+</html>
