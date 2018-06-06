@@ -1,0 +1,7 @@
+#for message
+#perl barcode_json.pl '{"neb":"12","barcodes":"CTTGTA,TTAGGC"}'
+
+## for error
+#perl barcode_json.pl '{"neb":"12","barcodes":"CTTGTA,TTAGGC,CTAGTA"}'
+
+perl barcode_json.pl '{"neb":"0","barcodes":"TAAGGCGA,CGTACTAG,GTAGAGGA,TCCTGAGC,GGACTCCT,TAGGCATG,CTCTCTAC,CAGAGAGG,TAGCTTAT,AGTCAACA,AGGCAGAA"}'

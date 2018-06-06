@@ -24,6 +24,7 @@ json_string = form.getvalue('json_input')
 #print ("""<p>"""+json_string+"""</p>""")
 
 #json_string="""{"amar":"0","bioo":"0","bioo6":"0","biooSm":"19","htcra":"0","htcrb":"0","mtcra":"0","mtcrb":"0","neb":"0","next":"0","tru":"0","barcodes":" - "} """
+#json_string="""{"neb":"12","barcodes":"CTTGTA,TTAGGC,CTAGTA"}"""
 removecurl_json_string=json_string[1:len(json_string)-1]
 
 #print(removecurl_json_string+"----------------")
@@ -34,7 +35,8 @@ json_output = subprocess.check_output("./barcode_json.pl '"+json_string+"'", she
 
 json_out_obj = json.loads(json_output)
 
-json_out_obj['html'] = subprocess.check_output("cat "+json_out_obj['html'], shell=True)
+if 'ERR' not in json_output:
+	json_out_obj['html'] = subprocess.check_output("cat "+json_out_obj['html'], shell=True)
 
 json_out_string = json.dumps(json_out_obj)
 
@@ -128,24 +130,30 @@ print("""
 """)
 
 
-if "ERR" in json_out_string:
-        print("<div> An error occured, please try again. </div>")
+if "ERR" in json_output:
+        print("""<div style="float:left;display: inline-block;width:50%;"> 
+		<br>
+		<br>
+		<p style="font-size:20px;font-family:Verdana;color:Red;" >An error occured, please try again.</p>""")
+	#print("""<p style="font-size:20px;font-family:Verdana;color:Red;" >"""+str(json_out_obj['ERR'])+"""</p></div>""")
+	json_out_obj_split = str(json_out_obj['ERR']).split(',')
+	print("""<table class="table table-bordered">
+		<tr><th>Input barcodes Invalid </th><th>Bad distances </th></tr>""")
+	print("""<tbody>"""+str(json_out_obj_split[-1])+"""</tbody>""")
+	print("""</table>""")
+	#print( """<p style="font-size:20px;font-family:Verdana;color:Red;" >"""+json_out_obj_split[-1]+"""</p>""")
+	print("""</div>""")
+	
+
 else:
-        #print("""<p>"""+json_string[1:len(json_string)-1]+"""</p>""")
 	print("""<div class="image" style="float:right;display: inline-block;width:50%;">""")
-	#print("""<p>"""+json_string[1:len(json_string)-1]+"""</p>""")
-	#print("""
-        #    <h2 style="font-family: Verdana; font-size: 30px;color: Navy;float:right; padding-right: 220px;">Diversity</h2>
-        #    <br>
-        #    <br>""")
-	#print("""<p>"""+json_string[1:len(json_string)-1]+"""</p>""")
 	print(""" <h2 style="font-family: Verdana; font-size: 30px;color: Navy;float:center;">You have given the following inputs</h2>""")
 	print("""<table class="table table-bordered" ><th>Barcode</th><th>Number</th><tbody>""")
 	for i in range(len(json_string_split_lines)):
 		
 		each_line_json=json_string_split_lines[i].split(":")
 		if each_line_json[1]!='"0' and each_line_json[1]!='""':
-			print("""<tr><td>"""+each_line_json[0][:len(each_line_json[0])-1]+"""</td><td>"""+each_line_json[1][1:len(each_line_json[1])]+"""</td></tr>""")
+			print("""<tr><td>"""+each_line_json[0][:len(each_line_json[0])-1].replace('"','')+"""</td><td>"""+each_line_json[1][1:len(each_line_json[1])].replace('"','')+"""</td></tr>""")
 	print("""</tbody></table>""")
 
 	print("""

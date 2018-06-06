@@ -16,7 +16,9 @@ my $my=common::generic::myUtil->new();
 ## test, should be sent from outside
 my $json_str='{"HumanTCRa":"8","MouseTCRb":"0","Nextera":"0","HumanTCRb":"0","MouseTCRa":"0","Amaryllis":"0","NEB":"0","Bioo-8mer":"0","Bioo-6mer":"0","Truseq":"0",';
 $json_str='{"amar":"18","bioo":"0","bioo6":"8","htcra":"0","htcrb":"0","mtcra":"0","mtcrb":"0","neb":"0","next":"0","tru":"0","barcodes":" - "}';
- 
+
+### should give error
+## '{"neb":"12","barcodes":"CTTGTA,TTAGGC"}'
 #$str.='"barcodes":" - "}';
 #$json_str.='"barcodes":"TAACGGTC,CAAGATAT,"}';
 #$str.='"barcodes":"TAACGGTC,CAAGATAT,TAACCGTC,CAATATAT,"}';
@@ -36,6 +38,9 @@ my ($usr_str,$bc_str,$err_str)=json_2_bc($json_str);
 #print "err_str=$err_str\n";
 
 if($err_str=~/\S/){
+ #   print "err_str=$err_str\n";
+    $err_str=~s/^\s+//;    $err_str=~s/\s+$//;
+    $err_str=~s/\s+/_/g;
     print "{\"ERR\":\"$err_str\"}\n";
     exit;
 }
@@ -44,15 +49,22 @@ if($bc_str !~ /\S/ && $usr_str !~ /\S/){
     $err_str.= "Sorry, you are asking me to guess what you want, I am legally not permitted to serve you this way. Please go back and make a selection ";
 }  
 if($err_str=~/\S/){
+#    print "err_str2=$err_str\n";
+    $err_str=~s/^\s+//;    $err_str=~s/\s+$//;
+    $err_str=~s/\s+/_/g;
     print "{\"ERR\":\"$err_str\"}\n";
     exit;
 }
 
 
-my ($des_str,$mat_str,$perf_str,$valid,$v_str)=mk_designs($bc_str,$usr_str);
+my ($des_str,$mat_str,$perf_str,$valid,$v_str,$err_str_new)=mk_designs($bc_str,$usr_str);
 
+#print "valid=$valid\n";
 if(!$valid){
+    $v_str=~s/:usr\d+//g;
+    $v_str=~s/([ACGT]+)\:([ACGT]+)\:(\d+)/<tr><td>$1\-$2<\/td><td>$3<\/td><\/tr>/;
     $err_str.= "Input barcodes invalid,bad_distances,$v_str";
+    
     #	"bad_dist:$v_str" ## bc1:bc2:dist
     my @rows=split(/,/,$v_str);
 #    print "<b> Invalid pairs in input</b>\n";
@@ -61,7 +73,9 @@ if(!$valid){
 }
 
 if($err_str=~/\S/){
-    print '{"ERR":"$err_str"}';
+    $err_str=~s/^\s+//;    $err_str=~s/\s+$//;
+    $err_str=~s/\s+/_/g;
+    print "{\"ERR\":\"$err_str\"}\n";
     exit;
 } 
 
@@ -92,8 +106,13 @@ my $fig_lnk=mk_fig_n_lnk($perf_str,$pfile);
 my $matf="tmp/mat$$.html";
 mk_tbl($mat_str,$matf);
 
+if($err_str_new=~/\S/){
+    $err_str_new=~s/^\s+//;    $err_str_new=~s/\s+$//; $err_str_new=~s/\s+/_/g;
+    print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\",\"message\":$err_str_new\"}\n";
+}
+else { 
 print "{\"csv\":\"$ocsv\",\"html\":\"$ohtml\",\"dist\":\"$matf\",\"fig_lnk\":\"$fig_lnk\",\"fig\":\"$png\"}\n";
-
+}
 exit;
 
 
@@ -175,7 +194,8 @@ sub mk_designs{
 	$pick_str=~s/\s+//g;
 	my ($P_set,$mess)= $bc->get_barcodes($pick_str,$pre_set_str);
 	#print join("\n",@{$P_set})."\n"; exit;
-#	print "$mess\n";
+	#	print "$mess\n";
+	my $err_str=$mess;
 
 	my $ret_str="Sequence,name,set\n";
 	my @set;
@@ -190,12 +210,12 @@ sub mk_designs{
 	    my $ret_str="";
 	    my $mat_str="";
 	    my $perf_str="";
-	    return($ret_str,$mat_str,$perf_str,$ret,$r_str);
+	    return($ret_str,$mat_str,$perf_str,$ret,$r_str,$err_str);
 	} 
 	my $mat_str=$bc->mk_dist_matrix(\@set);
 	my ($dstr,$dstrf)=$bc->mk_div(\@set);
 	my $perf_str=$bc_plot->csv_2_perf($dstr,$dstrf);
-	return($ret_str,$mat_str,$perf_str,1,"");
+	return($ret_str,$mat_str,$perf_str,1,"",$err_str);
     }
 } 
 
@@ -216,6 +236,7 @@ if($mybcs=~/[ACGT]{6}/){
     for(my $i=0;$i<@my;$i++){
 	my $j=$i+1;
 	if($j<10){ $usr_str.="$my[$i]:usr0$j,";}
+	else { $usr_str.="$my[$i]:usr$j,";}
     }
 }else { $mybcs="";$usr_str="";}
 $usr_str=~s/,$//;

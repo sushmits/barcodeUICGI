@@ -48,8 +48,8 @@ function createJson() {
 		json_string+= '"'+split[1]+'":"'+value1+'",' ;
 		
 	}
-	var preselected = document.getElementById("Preselectedbarcodes").value.trim().replace(','," ");
-	preselected=preselected.replace(/\s+/g,',');
+	var preselected = document.getElementById("Preselectedbarcodes").value.trim().replace(/(\s)/gm, ",");
+	preselected=preselected.replace(/(,)+/gm, ",");
 	json_string+='"barcodes":'+'"'+preselected+'"}' ;
     document.getElementsByName('json_input')[0].value = json_string;
 
@@ -67,4 +67,6 @@ function resetAction()
 		var myRange = document.getElementById("myRange"+i);
 		myRange.value = 0;
 	}
+	var preselected = document.getElementById("Preselectedbarcodes")
+	preselected.value = "";
 }
